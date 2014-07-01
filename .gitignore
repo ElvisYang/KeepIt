@@ -18,3 +18,5 @@ Release-universal
 .DS_Store
 *.xcuserstate
 *.build/
+
+*.xcuserstate
