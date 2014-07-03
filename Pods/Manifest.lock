@@ -1,0 +1,20 @@
+PODS:
+  - Bolts (1.1.0)
+  - Facebook-iOS-SDK (3.15.1):
+    - Bolts
+  - FMDB (2.3):
+    - FMDB/standard
+  - FMDB/common (2.3)
+  - FMDB/standard (2.3):
+    - FMDB/common
+
+DEPENDENCIES:
+  - Facebook-iOS-SDK (~> 3.15.1)
+  - FMDB (~> 2.3)
+
+SPEC CHECKSUMS:
+  Bolts: 91c2af8eae1d44e1dd75946a5b0ae04a43ea43e4
+  Facebook-iOS-SDK: 56214af8e0ef16e751eb2804250326b709e571b8
+  FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
+
+COCOAPODS: 0.32.1
