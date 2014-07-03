@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142A296B1963B40C00CFBC1A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A296A1963B40C00CFBC1A /* HomeViewController.m */; };
 		14555A2A19628E9700B35CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A2919628E9700B35CBD /* Foundation.framework */; };
 		14555A2C19628E9700B35CBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A2B19628E9700B35CBD /* CoreGraphics.framework */; };
 		14555A2E19628E9700B35CBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A2D19628E9700B35CBD /* UIKit.framework */; };
@@ -32,6 +33,8 @@
 		14555A70196290F500B35CBD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A6F196290F500B35CBD /* Security.framework */; };
 		14555A72196290FA00B35CBD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A71196290FA00B35CBD /* StoreKit.framework */; };
 		14555A741962910000B35CBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A731962910000B35CBD /* SystemConfiguration.framework */; };
+		14555A761962AC7D00B35CBD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A751962AC7D00B35CBD /* Social.framework */; };
+		14555A781962AD5100B35CBD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A771962AD5100B35CBD /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		142A29691963B40C00CFBC1A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ViewControllers/HomeViewController.h; sourceTree = "<group>"; };
+		142A296A1963B40C00CFBC1A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ViewControllers/HomeViewController.m; sourceTree = "<group>"; };
 		14555A2619628E9700B35CBD /* KeepIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14555A2919628E9700B35CBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14555A2B19628E9700B35CBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -75,6 +80,8 @@
 		14555A6F196290F500B35CBD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		14555A71196290FA00B35CBD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		14555A731962910000B35CBD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		14555A751962AC7D00B35CBD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		14555A771962AD5100B35CBD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14555A781962AD5100B35CBD /* Accounts.framework in Frameworks */,
+				14555A761962AC7D00B35CBD /* Social.framework in Frameworks */,
 				14555A741962910000B35CBD /* SystemConfiguration.framework in Frameworks */,
 				14555A72196290FA00B35CBD /* StoreKit.framework in Frameworks */,
 				14555A70196290F500B35CBD /* Security.framework in Frameworks */,
@@ -111,6 +120,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142A29651963B2B700CFBC1A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				142A29691963B40C00CFBC1A /* HomeViewController.h */,
+				142A296A1963B40C00CFBC1A /* HomeViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		14555A1D19628E9700B35CBD = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +151,8 @@
 		14555A2819628E9700B35CBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				14555A771962AD5100B35CBD /* Accounts.framework */,
+				14555A751962AC7D00B35CBD /* Social.framework */,
 				14555A731962910000B35CBD /* SystemConfiguration.framework */,
 				14555A71196290FA00B35CBD /* StoreKit.framework */,
 				14555A6F196290F500B35CBD /* Security.framework */,
@@ -154,6 +174,7 @@
 		14555A2F19628E9700B35CBD /* KeepIt */ = {
 			isa = PBXGroup;
 			children = (
+				142A29651963B2B700CFBC1A /* ViewControllers */,
 				14555A3819628E9700B35CBD /* AppDelegate.h */,
 				14555A3919628E9700B35CBD /* AppDelegate.m */,
 				14555A3B19628E9700B35CBD /* Main_iPhone.storyboard */,
@@ -296,6 +317,7 @@
 				14555A4319628E9700B35CBD /* ViewController.m in Sources */,
 				14555A3A19628E9700B35CBD /* AppDelegate.m in Sources */,
 				14555A3619628E9700B35CBD /* main.m in Sources */,
+				142A296B1963B40C00CFBC1A /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
