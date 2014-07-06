@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
+#import "KIDBInitializer.h"
 
 @implementation AppDelegate
 
@@ -18,6 +19,8 @@
                   clientKey:@"UEBW6iOSqUY6naL8rDWs7dQb5Zi7LSAQYrc05e45"];
    
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    [KIDBInitializer init];
     
     return YES;
 }

@@ -1,20 +1,20 @@
 //
-//  HomeViewController.m
+//  UserAuthenticationViewController.m
 //  KeepIt
 //
-//  Created by Elvis on 2/7/14.
+//  Created by Elvis on 3/7/14.
 //  Copyright (c) 2014 Elvis. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "KIUserAuthenticationViewController.h"
 #import <Parse/Parse.h>
 #import <Parse/PFLogInViewController.h>
 
-@interface HomeViewController ()
+@interface KIUserAuthenticationViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation KIUserAuthenticationViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -34,7 +34,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
     if (![PFUser currentUser]) { // No user logged in
         // Create the log in view controller
         PFLogInViewController *logInViewController = [[PFLogInViewController alloc] init];
@@ -42,9 +41,8 @@
         
         [self presentViewController:logInViewController animated:YES completion:NULL];
     }
-    
-    [super viewDidAppear:animated];
-
+    else
+        [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,7 +50,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 - (BOOL)logInViewController:(PFLogInViewController *)logInController shouldBeginLogInWithUsername:(NSString *)username password:(NSString *)password
 {
@@ -68,7 +65,7 @@
 /// Sent to the delegate when a PFUser is logged in.
 - (void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
 {
-    [logInController dismissViewControllerAnimated:YES completion:NULL];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
