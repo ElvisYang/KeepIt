@@ -23,6 +23,11 @@
 		142A2B6919682FE200CFBC1A /* KIAddEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A2B6819682FE200CFBC1A /* KIAddEntryViewController.m */; };
 		142A2B6C1968FD7A00CFBC1A /* KIEntryForAllTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A2B6B1968FD7A00CFBC1A /* KIEntryForAllTableViewCell.m */; };
 		142A2B6F19691C3B00CFBC1A /* KITodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A2B6E19691C3B00CFBC1A /* KITodayViewController.m */; };
+		142A2B741969503300CFBC1A /* RatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A2B731969503300CFBC1A /* RatingView.m */; };
+		142A2B781969529E00CFBC1A /* KIEntryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A2B771969529E00CFBC1A /* KIEntryTableViewCell.m */; };
+		142A2B7B1969602A00CFBC1A /* KIRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A2B7A1969602A00CFBC1A /* KIRating.m */; };
+		142A2B801969895F00CFBC1A /* KIDBRatingAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A2B7F1969895F00CFBC1A /* KIDBRatingAccess.m */; };
+		142A2B8319698EE800CFBC1A /* KIRatingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 142A2B8219698EE800CFBC1A /* KIRatingManager.m */; };
 		14555A2A19628E9700B35CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A2919628E9700B35CBD /* Foundation.framework */; };
 		14555A2C19628E9700B35CBD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A2B19628E9700B35CBD /* CoreGraphics.framework */; };
 		14555A2E19628E9700B35CBD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A2D19628E9700B35CBD /* UIKit.framework */; };
@@ -49,6 +54,8 @@
 		14555A741962910000B35CBD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A731962910000B35CBD /* SystemConfiguration.framework */; };
 		14555A761962AC7D00B35CBD /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A751962AC7D00B35CBD /* Social.framework */; };
 		14555A781962AD5100B35CBD /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14555A771962AD5100B35CBD /* Accounts.framework */; };
+		149B1AD5197124BF00C289EA /* KIHistoryByDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149B1AD4197124BF00C289EA /* KIHistoryByDateViewController.m */; };
+		149B1AD81971264900C289EA /* KIHistoryPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149B1AD71971264900C289EA /* KIHistoryPageViewController.m */; };
 		7FD816EE0CBD4CD48A5CEA46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81978B9231254E19B4979595 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +103,17 @@
 		142A2B6B1968FD7A00CFBC1A /* KIEntryForAllTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIEntryForAllTableViewCell.m; path = ViewControllers/KIEntryForAllTableViewCell.m; sourceTree = "<group>"; };
 		142A2B6D19691C3B00CFBC1A /* KITodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KITodayViewController.h; path = ViewControllers/KITodayViewController.h; sourceTree = "<group>"; };
 		142A2B6E19691C3B00CFBC1A /* KITodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KITodayViewController.m; path = ViewControllers/KITodayViewController.m; sourceTree = "<group>"; };
+		142A2B721969503300CFBC1A /* RatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RatingView.h; path = External/Rating/RatingView.h; sourceTree = "<group>"; };
+		142A2B731969503300CFBC1A /* RatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RatingView.m; path = External/Rating/RatingView.m; sourceTree = "<group>"; };
+		142A2B761969529E00CFBC1A /* KIEntryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KIEntryTableViewCell.h; path = ViewControllers/KIEntryTableViewCell.h; sourceTree = "<group>"; };
+		142A2B771969529E00CFBC1A /* KIEntryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIEntryTableViewCell.m; path = ViewControllers/KIEntryTableViewCell.m; sourceTree = "<group>"; };
+		142A2B791969602A00CFBC1A /* KIRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KIRating.h; path = Objects/KIRating.h; sourceTree = "<group>"; };
+		142A2B7A1969602A00CFBC1A /* KIRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIRating.m; path = Objects/KIRating.m; sourceTree = "<group>"; };
+		142A2B7D1969878400CFBC1A /* KIRatingAccess.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KIRatingAccess.h; path = DataAccess/KIRatingAccess.h; sourceTree = "<group>"; };
+		142A2B7E1969895F00CFBC1A /* KIDBRatingAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KIDBRatingAccess.h; path = DataAccess/KIDBRatingAccess.h; sourceTree = "<group>"; };
+		142A2B7F1969895F00CFBC1A /* KIDBRatingAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIDBRatingAccess.m; path = DataAccess/KIDBRatingAccess.m; sourceTree = "<group>"; };
+		142A2B8119698EE800CFBC1A /* KIRatingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KIRatingManager.h; path = Business/KIRatingManager.h; sourceTree = "<group>"; };
+		142A2B8219698EE800CFBC1A /* KIRatingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIRatingManager.m; path = Business/KIRatingManager.m; sourceTree = "<group>"; };
 		14555A2619628E9700B35CBD /* KeepIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14555A2919628E9700B35CBD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		14555A2B19628E9700B35CBD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,6 +144,10 @@
 		14555A731962910000B35CBD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		14555A751962AC7D00B35CBD /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		14555A771962AD5100B35CBD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		149B1AD3197124BF00C289EA /* KIHistoryByDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KIHistoryByDateViewController.h; path = ViewControllers/KIHistoryByDateViewController.h; sourceTree = "<group>"; };
+		149B1AD4197124BF00C289EA /* KIHistoryByDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIHistoryByDateViewController.m; path = ViewControllers/KIHistoryByDateViewController.m; sourceTree = "<group>"; };
+		149B1AD61971264900C289EA /* KIHistoryPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KIHistoryPageViewController.h; path = ViewControllers/KIHistoryPageViewController.h; sourceTree = "<group>"; };
+		149B1AD71971264900C289EA /* KIHistoryPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KIHistoryPageViewController.m; path = ViewControllers/KIHistoryPageViewController.m; sourceTree = "<group>"; };
 		3481D7DE6B1F4A398CA53AE6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		81978B9231254E19B4979595 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -184,6 +206,12 @@
 				142A2B6819682FE200CFBC1A /* KIAddEntryViewController.m */,
 				142A2B6A1968FD7A00CFBC1A /* KIEntryForAllTableViewCell.h */,
 				142A2B6B1968FD7A00CFBC1A /* KIEntryForAllTableViewCell.m */,
+				142A2B761969529E00CFBC1A /* KIEntryTableViewCell.h */,
+				142A2B771969529E00CFBC1A /* KIEntryTableViewCell.m */,
+				149B1AD3197124BF00C289EA /* KIHistoryByDateViewController.h */,
+				149B1AD4197124BF00C289EA /* KIHistoryByDateViewController.m */,
+				149B1AD61971264900C289EA /* KIHistoryPageViewController.h */,
+				149B1AD71971264900C289EA /* KIHistoryPageViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -196,6 +224,8 @@
 				142A2AF31966D5FC00CFBC1A /* KIFIle.h */,
 				142A2AF41966D5FC00CFBC1A /* KIFIle.m */,
 				142A2AF91966D7D700CFBC1A /* KIFileType.h */,
+				142A2B791969602A00CFBC1A /* KIRating.h */,
+				142A2B7A1969602A00CFBC1A /* KIRating.m */,
 			);
 			name = Objects;
 			sourceTree = "<group>";
@@ -207,6 +237,8 @@
 				142A2AF71966D61D00CFBC1A /* KIFileManager.m */,
 				142A2AFC1966D98F00CFBC1A /* KIEntryManager.h */,
 				142A2AFD1966D98F00CFBC1A /* KIEntryManager.m */,
+				142A2B8119698EE800CFBC1A /* KIRatingManager.h */,
+				142A2B8219698EE800CFBC1A /* KIRatingManager.m */,
 			);
 			name = Business;
 			sourceTree = "<group>";
@@ -214,13 +246,15 @@
 		142A2AFF1966DD1D00CFBC1A /* DataAccess */ = {
 			isa = PBXGroup;
 			children = (
+				142A2B7C1969870200CFBC1A /* Protocol */,
 				142A2B031966E08000CFBC1A /* KIDataAccess.h */,
 				142A2B041966E08000CFBC1A /* KIDataAccess.m */,
 				142A2B001966DD6900CFBC1A /* KIDBEntryAccess.h */,
 				142A2B011966DD6900CFBC1A /* KIDBEntryAccess.m */,
-				142A2B5A19676DF500CFBC1A /* KIEntryAccess.h */,
 				142A2B5B1967723300CFBC1A /* KIDBInitializer.h */,
 				142A2B5C1967723300CFBC1A /* KIDBInitializer.m */,
+				142A2B7E1969895F00CFBC1A /* KIDBRatingAccess.h */,
+				142A2B7F1969895F00CFBC1A /* KIDBRatingAccess.m */,
 			);
 			name = DataAccess;
 			sourceTree = "<group>";
@@ -232,6 +266,39 @@
 				142A2B6019679D9600CFBC1A /* KIConstant.m */,
 			);
 			name = Constant;
+			sourceTree = "<group>";
+		};
+		142A2B7019694FF900CFBC1A /* External */ = {
+			isa = PBXGroup;
+			children = (
+				142A2B711969500500CFBC1A /* Rating */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		142A2B711969500500CFBC1A /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				142A2B721969503300CFBC1A /* RatingView.h */,
+				142A2B731969503300CFBC1A /* RatingView.m */,
+			);
+			name = Rating;
+			sourceTree = "<group>";
+		};
+		142A2B751969509600CFBC1A /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Rating;
+			sourceTree = "<group>";
+		};
+		142A2B7C1969870200CFBC1A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				142A2B5A19676DF500CFBC1A /* KIEntryAccess.h */,
+				142A2B7D1969878400CFBC1A /* KIRatingAccess.h */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 		14555A1D19628E9700B35CBD = {
@@ -281,6 +348,7 @@
 		14555A2F19628E9700B35CBD /* KeepIt */ = {
 			isa = PBXGroup;
 			children = (
+				142A2B7019694FF900CFBC1A /* External */,
 				142A2B5E19679CEC00CFBC1A /* Constant */,
 				142A2AEE1966D13400CFBC1A /* Objects */,
 				142A2AFF1966DD1D00CFBC1A /* DataAccess */,
@@ -299,6 +367,7 @@
 		14555A3019628E9700B35CBD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				142A2B751969509600CFBC1A /* Rating */,
 				142A2B621967A03400CFBC1A /* database.db */,
 				14555A3119628E9700B35CBD /* KeepIt-Info.plist */,
 				14555A3219628E9700B35CBD /* InfoPlist.strings */,
@@ -461,7 +530,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				142A2B6C1968FD7A00CFBC1A /* KIEntryForAllTableViewCell.m in Sources */,
+				149B1AD5197124BF00C289EA /* KIHistoryByDateViewController.m in Sources */,
+				149B1AD81971264900C289EA /* KIHistoryPageViewController.m in Sources */,
 				142A2B6119679D9600CFBC1A /* KIConstant.m in Sources */,
+				142A2B801969895F00CFBC1A /* KIDBRatingAccess.m in Sources */,
 				142A2B6619682A5000CFBC1A /* KIAllEntriesViewController.m in Sources */,
 				142A2B021966DD6900CFBC1A /* KIDBEntryAccess.m in Sources */,
 				142A2A1A19654B5E00CFBC1A /* KIUserAuthenticationViewController.m in Sources */,
@@ -469,12 +541,16 @@
 				14555A3619628E9700B35CBD /* main.m in Sources */,
 				142A2AF81966D61D00CFBC1A /* KIFileManager.m in Sources */,
 				142A2AF11966D19900CFBC1A /* KIEntry.m in Sources */,
+				142A2B781969529E00CFBC1A /* KIEntryTableViewCell.m in Sources */,
 				142A2B5D1967723300CFBC1A /* KIDBInitializer.m in Sources */,
 				142A2B6F19691C3B00CFBC1A /* KITodayViewController.m in Sources */,
 				142A2AFE1966D98F00CFBC1A /* KIEntryManager.m in Sources */,
 				142A2B6919682FE200CFBC1A /* KIAddEntryViewController.m in Sources */,
+				142A2B7B1969602A00CFBC1A /* KIRating.m in Sources */,
 				142A296B1963B40C00CFBC1A /* KIHomeViewController.m in Sources */,
 				142A2B051966E08000CFBC1A /* KIDataAccess.m in Sources */,
+				142A2B8319698EE800CFBC1A /* KIRatingManager.m in Sources */,
+				142A2B741969503300CFBC1A /* RatingView.m in Sources */,
 				142A2A131965459300CFBC1A /* KISettingViewController.m in Sources */,
 				142A2AF51966D5FC00CFBC1A /* KIFIle.m in Sources */,
 			);

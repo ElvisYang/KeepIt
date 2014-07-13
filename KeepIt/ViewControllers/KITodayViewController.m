@@ -8,6 +8,10 @@
 
 #import "KITodayViewController.h"
 #import "KIEntryManager.h"
+#import "KIRatingManager.h"
+#import "RatingView.h"
+#import "KIRating.h"
+#import "KIEntryTableViewCell.h"
 
 @interface KITodayViewController ()
 
@@ -15,7 +19,8 @@
 
 @implementation KITodayViewController
 {
-    NSArray* usedEntries;
+    NSArray* m_usedEntries;
+    NSDictionary* m_todayRating;
 }
 
 @synthesize entriesTableView;
@@ -32,7 +37,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    usedEntries = [[KIEntryManager sharedInstance] getUsedEntries];
+//    m_usedEntries = [[KIEntryManager sharedInstance] getUsedEntries];
+//    m_todayRating = [[KIRatingManager sharedInstance] getTodayRating];
     self.entriesTableView.dataSource = self;
     self.entriesTableView.delegate = self;
     
@@ -42,7 +48,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    usedEntries = [[KIEntryManager sharedInstance] getUsedEntries];
+    m_usedEntries = [[KIEntryManager sharedInstance] getUsedEntries];
+    m_todayRating = [[KIRatingManager sharedInstance] getTodayRating];
     [self.entriesTableView reloadData];
 }
 
@@ -72,27 +79,30 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return usedEntries.count;
+    return m_usedEntries.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EntryCell"];
+    KIEntryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EntryCell"];
     
-//    KIEntry* entry = (KIEntry*)usedEntries[indexPath.row];
-//    cell.entry = entry;
-//    
-//    ((UILabel*)cell.contentView.subviews[1]).text = entry.name;
-//    
-//    
-//    UISwitch* switcher = (UISwitch*)cell.contentView.subviews[2];
-//    switcher.on = entry.isUsed;
-//    
-    cell.textLabel.text = ((KIEntry*)usedEntries[indexPath.row]).name;
-//    
-//    // Configure the cell...
+    KIEntry* entry = m_usedEntries[indexPath.row];
+    cell.entry = entry;
+    
+    cell.nameValue.text = entry.name;
+    
+    KIRating* rating = [m_todayRating objectForKey:[NSNumber numberWithInt:entry.id]];
+    if(rating)
+    {
+        [cell.ratingView displayRating:rating.rating noCallback:YES];
+    }
     
     return cell;
+}
+
+#pragma mark Rating View
+-(void)ratingChanged:(float)newRating {
+    ;
 }
 
 @end
